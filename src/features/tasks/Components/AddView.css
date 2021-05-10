@@ -1,0 +1,48 @@
+.add-view {
+  height: 3rem;
+  width: 100%;
+  position: fixed;
+  padding: 0.5rem;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.add-field {
+  flex-grow: 1;
+  height: 90%;
+  padding-left: 0.3rem;
+}
+
+.add-field-input {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  border-bottom: 0.15rem solid #617999;
+  font-size: 1.4em;
+  padding-left: 0.3rem;
+}
+
+.add-field-input:focus {
+  outline: none;
+}
+
+.add-field-input::placeholder {
+  color: black;
+}
+
+.add-btn {
+  height: 100%;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ic-add-btn {
+  width: 80%;
+  height: 80%;
+  color: #617999;
+  cursor: pointer;
+}

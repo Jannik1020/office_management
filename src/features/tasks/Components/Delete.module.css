@@ -1,0 +1,12 @@
+.icDelete {
+  cursor: pointer;
+  font-size: 2em;
+  color: #999;
+
+  position: relative;
+  top: 4%;
+}
+
+.icDelete:hover {
+  color: #bababa;
+}

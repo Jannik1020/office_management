@@ -1,0 +1,49 @@
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm {
+  width: 500px;
+  margin: auto;
+  padding: 2rem;
+  font-size: 1.3em;
+  box-shadow: 0 0 0.7rem #b3e5fc;
+  border-radius: 0.4rem;
+  color: #212121;
+}
+
+h1 {
+  margin-left: 0.4rem;
+}
+
+.input {
+  box-sizing: border-box;
+  width: 100%;
+
+  padding: 1rem 1.8rem;
+  margin-bottom: 2rem;
+
+  font-size: 1em;
+  color: #212121;
+
+  border: 0.1rem solid #03a9f4;
+  border-radius: 3rem;
+}
+
+.input[name="uname"] {
+  margin-top: 1.5rem;
+}
+
+.submitBtn {
+  padding: 1rem;
+  font-size: 1em;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3rem;
+  background-color: #0288d1;
+  color: #ffffff;
+}

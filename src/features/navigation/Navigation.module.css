@@ -1,0 +1,60 @@
+.navigation {
+    background-color: #2D3047;
+
+    min-width: 300px;
+    height: 100%;
+
+    padding-top: 0.5rem;
+
+    border-right: 0.1rem solid #191447;
+    border-bottom-right-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.navigation div {
+    width: 95%;
+    height: 2rem;
+
+    padding: 0.4rem 0;
+    padding-left: 0.2rem;
+
+    font-size: 1.2em;
+
+    display: flex;
+    align-items: center;
+}
+
+.navHeader {
+    margin-bottom: 0.3rem;
+}
+
+.navItem {
+    padding-left: 0.5rem;
+    border-radius: 0.7rem;
+}
+
+.navItem:hover {
+    background-color: #3F76B0;
+}
+
+.itemContent {
+    width: 100%;
+    height: 100%;
+    margin-left: 0.5rem;
+    color: #D5E5F2;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.navHeader p {
+    font-size: 1.2em;
+    margin-left: 0.5rem;
+}

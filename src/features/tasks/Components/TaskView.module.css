@@ -1,0 +1,96 @@
+.defaultText {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2em;
+  color: #767676;
+}
+
+.defaultIcon {
+  margin-top: 1.3em;
+  width: 1.3em;
+  height: 1.3em;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.completedText {
+  height: 4rem;
+  margin-top: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.4em;
+  color: #767676;
+}
+
+.taskList {
+  list-style-type: none;
+}
+
+.done {
+  margin-bottom: 0;
+}
+
+/*
+.done > * {
+  bo
+}*/
+
+.done p {
+  color: #4caf50;
+}
+
+.sectionHeader {
+  height: 3rem;
+
+  padding: 0.5rem;
+
+  border-bottom: 0.1rem solid black;
+
+  display: flex;
+  align-items: center;
+}
+
+.completedTasks {
+  border-bottom: 0.1rem solid #4caf50;
+}
+
+.importantTasks {
+  border-bottom: 0.1rem solid red;
+}
+
+.sectionHeader:hover {
+  background-color: #dcf1fc;
+  cursor: pointer;
+}
+
+.icSectionWrapper {
+  height: 100%;
+  width: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icSection {
+  height: 1.5em;
+  width: 1.5em;
+
+  position: relative;
+  top: 2%;
+}
+
+.headerTitle {
+  font-size: 1.4em;
+  flex-grow: 1;
+}
