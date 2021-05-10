@@ -12,6 +12,7 @@
 
 /server
 .idea
+.vscode
 
 # production
 /build
