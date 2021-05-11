@@ -7,6 +7,13 @@ const db = require("../lib/models/index");
 
 db.sequelize.sync(); // force: true for resetting
 
+try {
+  await db.sequelize.authenticate();
+  console.log("Connection has been established successfully.");
+} catch (error) {
+  console.error("Unable to connect to the database:", error);
+}
+
 const logger = require("morgan");
 
 app.use((req, res, next) => {
