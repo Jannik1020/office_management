@@ -7,7 +7,7 @@ const initialState = {
 };
 
 export const loginUser = createAsyncThunk("users/login", async (username) => {
-  const data = await fetch("http://localhost:8080/api/user/login", {
+  const data = await fetch("../../../api/user/login", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({

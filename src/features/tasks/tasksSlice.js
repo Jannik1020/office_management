@@ -27,7 +27,7 @@ const initialState = {
 }; // section: tasks, collapsed, header
 
 export const fetchTasks = createAsyncThunk("/tasks/findAll", async (userId) => {
-  return await fetch("http://localhost:8080/api/tasks/find/", {
+  return await fetch("../../../api/tasks/find/", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ userId: userId }),
@@ -41,7 +41,7 @@ export const fetchTasks = createAsyncThunk("/tasks/findAll", async (userId) => {
 export const updateTaskDB = createAsyncThunk(
   "/tasks/update",
   async ([taskId, currentSection, toUpdate, userId]) => {
-    const data = await fetch("http://localhost:8080/api/tasks/update/", {
+    const data = await fetch("../../../api/tasks/update/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -60,7 +60,7 @@ export const updateTaskDB = createAsyncThunk(
 export const addTaskDB = createAsyncThunk(
   "/tasks/create",
   async ([task, userId]) => {
-    return fetch("http://localhost:8080/api/tasks/create/", {
+    return fetch("../../../api/tasks/create/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ task: { ...task, userId: userId } }),
@@ -73,7 +73,7 @@ export const addTaskDB = createAsyncThunk(
 export const removeTaskDB = createAsyncThunk(
   "/tasks/remove",
   async ([taskId, userId]) => {
-    return fetch("http://localhost:8080/api/tasks/remove/", {
+    return fetch("../../../api/tasks/remove/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id: taskId, userId: userId }),
