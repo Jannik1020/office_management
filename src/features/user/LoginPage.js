@@ -1,17 +1,9 @@
 import React, { useState } from "react";
-import { useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import styles from "./LoginPage.module.css";
-import { loginUser} from "./userSlice";
+import { loginUser } from "./userSlice";
 
-async function loginUser(credentials) {
-  console.log(credentials);
-  return fetch("http://localhost:8080/login", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(credentials),
-  }).then((data) => data.json());
-}
-export default function LoginPage({ setToken }) {
+export default function LoginPage() {
   const [uname, setUName] = useState("");
   // const [pwd, setPwd] = useState("");
 
@@ -20,15 +12,7 @@ export default function LoginPage({ setToken }) {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     dispatch(loginUser(uname));
-  }
-
-  function handleNameInput(e) {
-    setUName(e.target.value);
-  }
-
-  /*function handlePwdInput(e) {
-    setPwd(e.target.value);
-  }*/
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -60,7 +44,3 @@ export default function LoginPage({ setToken }) {
     </div>
   );
 }
-
-LoginPage.propTypes = {
-  setToken: PropTypes.func.isRequired,
-};
