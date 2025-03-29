@@ -13,9 +13,9 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 function App() {
   const user = useSelector(selectUser);
 
-  if (!user.signedIn) {
+ /* if (!user.signedIn) {
     return <LoginPage />;
-  }
+  }*/
   return (
     <div className="app">
       <BrowserRouter>
